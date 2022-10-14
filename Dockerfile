@@ -1,8 +1,8 @@
 # FROM ubuntu:18.04
 FROM public.ecr.aws/f0j5z9b5/ubuntu/16.04:072122
 
-# set the default NODE_ENV to production
-# for dev/test build with: docker build --build-arg NODE=development .
+# set the default NODE_ENV to production - changed
+# for dev/test build with: docker build --build-arg NODE=development . 
 # and the testing npms will be included
 ARG NODE=production
 ENV NODE_ENV ${NODE}
